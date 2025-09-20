@@ -11,30 +11,28 @@ const content = {
         welcomeText: "Nestled in the beautiful coastal city of Alanya, AK Hotel offers an unparalleled blend of luxury, comfort, and authentic Turkish hospitality. Every detail has been carefully crafted to ensure your stay exceeds expectations.",
 
         // Amenities Section
-        amenitiesTitle: "World-Class Amenities",
-        amenitiesSubtitle: "Experience the finest services designed for your comfort and convenience",
-        amenityBeach: "Beach Access",
-        amenityBeachDesc: "Just 2 minutes walk to pristine Mediterranean beaches",
+        amenitiesTitle: "Hotel Amenities & Services",
+        amenitiesSubtitle: "Everything you need for a comfortable and enjoyable stay",
         amenityPool: "Swimming Pool",
-        amenityPoolDesc: "Stunning outdoor pool with panoramic city views",
-        amenityDining: "Fine Dining",
-        amenityDiningDesc: "Exquisite cuisine and premium bar service",
+        amenityPoolDesc: "Outdoor pool with stunning views for relaxation",
+        amenityBreakfast: "Breakfast Service",
+        amenityBreakfastDesc: "Complimentary breakfast with Turkish & international options",
+        amenityMinibar: "Minibar",
+        amenityMinibarDesc: "In-room minibar stocked with beverages and snacks",
+        amenitySafe: "Safe Box",
+        amenitySafeDesc: "In-room safe for your valuables and important documents",
+        amenityTv: "Television",
+        amenityTvDesc: "Flat-screen TV with satellite channels and entertainment",
         amenityWifi: "Free Wi-Fi",
-        amenityWifiDesc: "High-speed internet throughout the property",
-        amenityFamily: "Family Friendly",
-        amenityFamilyDesc: "Warm atmosphere perfect for families and couples",
-        amenityRooms: "Luxury Rooms",
-        amenityRoomsDesc: "Elegantly appointed rooms with modern amenities",
+        amenityWifiDesc: "High-speed wireless internet throughout the hotel",
+        amenityAc: "Air Conditioning",
+        amenityAcDesc: "Individual climate control in every room for your comfort",
+        amenityBar: "Bar Service",
+        amenityBarDesc: "Full-service bar with local and international beverages",
 
         // Gallery Section
         galleryTitle: "Photo Gallery",
         gallerySubtitle: "Discover the beauty and elegance of AK Hotel",
-
-        // Testimonials Section
-        testimonialsTitle: "Guest Experiences",
-        testimonial1: "An absolutely wonderful stay! The staff was incredibly welcoming, and the rooms were spotless with beautiful views. The pool area is gorgeous, especially in the evening.",
-        testimonial2: "Perfect location just steps from the beach. The breakfast was exceptional, and the service was top-notch. We felt truly pampered throughout our stay.",
-        testimonial3: "AK Hotel exceeded all our expectations. The modern amenities, comfortable beds, and friendly atmosphere made our family vacation unforgettable.",
 
         // Location Section
         mapTitle: "Our Prime Location",
@@ -76,30 +74,28 @@ const content = {
         welcomeText: "Alanya'nın güzel sahil kentinde yer alan AK Hotel, lüks, konfor ve otantik Türk misafirperverliğinin eşsiz karışımını sunar. Her detay, konaklamanızın beklentilerinizi aşmasını sağlamak için özenle düşünülmüştür.",
 
         // Amenities Section
-        amenitiesTitle: "Dünya Standartlarında Olanaklar",
-        amenitiesSubtitle: "Konforunuz ve rahatlığınız için tasarlanmış en iyi hizmetleri deneyimleyin",
-        amenityBeach: "Plaja Erişim",
-        amenityBeachDesc: "Bembeyaz Akdeniz plajlarına sadece 2 dakika yürüyüş",
+        amenitiesTitle: "Otel Olanakları & Hizmetleri",
+        amenitiesSubtitle: "Konforlu ve keyifli bir konaklama için ihtiyacınız olan her şey",
         amenityPool: "Yüzme Havuzu",
-        amenityPoolDesc: "Panoramik şehir manzaralı muhteşem açık havuz",
-        amenityDining: "Gurme Yemek",
-        amenityDiningDesc: "Nefis mutfak ve premium bar hizmeti",
+        amenityPoolDesc: "Dinlenmek için muhteşem manzaralı açık havuz",
+        amenityBreakfast: "Kahvaltı Hizmeti",
+        amenityBreakfastDesc: "Türk ve uluslararası seçeneklerle ücretsiz kahvaltı",
+        amenityMinibar: "Minibar",
+        amenityMinibarDesc: "İçecek ve atıştırmalıklarla dolu oda içi minibar",
+        amenitySafe: "Kasa",
+        amenitySafeDesc: "Değerli eşyalarınız ve önemli belgeleriniz için oda içi kasa",
+        amenityTv: "Televizyon",
+        amenityTvDesc: "Uydu kanalları ve eğlence içerikli düz ekran TV",
         amenityWifi: "Ücretsiz Wi-Fi",
-        amenityWifiDesc: "Tüm tesiste yüksek hızlı internet",
-        amenityFamily: "Aile Dostu",
-        amenityFamilyDesc: "Aileler ve çiftler için mükemmel sıcak atmosfer",
-        amenityRooms: "Lüks Odalar",
-        amenityRoomsDesc: "Modern olanaklarla zarif şekilde döşenmiş odalar",
+        amenityWifiDesc: "Otelin tamamında yüksek hızlı kablosuz internet",
+        amenityAc: "Klima",
+        amenityAcDesc: "Konforunuz için her odada bireysel iklim kontrolü",
+        amenityBar: "Bar Hizmeti",
+        amenityBarDesc: "Yerel ve uluslararası içeceklerle tam hizmet bar",
 
         // Gallery Section
         galleryTitle: "Fotoğraf Galerisi",
         gallerySubtitle: "AK Hotel'in güzelliğini ve zarafetini keşfedin",
-
-        // Testimonials Section
-        testimonialsTitle: "Misafir Deneyimleri",
-        testimonial1: "Kesinlikle harika bir konaklama! Personel inanılmaz misafirperverdi ve odalar tertemiz ve güzel manzaralıydı. Havuz alanı muhteşem, özellikle akşamları.",
-        testimonial2: "Plaja sadece birkaç adım mesafede mükemmel konum. Kahvaltı olağanüstüydü ve hizmet birinci sınıftı. Konaklamanız boyunca gerçekten şımartıldığımızı hissettik.",
-        testimonial3: "AK Hotel tüm beklentilerimizi aştı. Modern olanaklar, rahat yataklar ve samimi atmosfer aile tatilimizi unutulmaz kıldı.",
 
         // Location Section
         mapTitle: "Birinci Sınıf Konumumuz",
@@ -164,17 +160,20 @@ function setLanguage(lang) {
     
     // Individual amenities
     const amenityElements = [
-        'amenity-beach', 'amenity-beach-desc',
         'amenity-pool', 'amenity-pool-desc',
-        'amenity-dining', 'amenity-dining-desc',
+        'amenity-breakfast', 'amenity-breakfast-desc',
+        'amenity-minibar', 'amenity-minibar-desc',
+        'amenity-safe', 'amenity-safe-desc',
+        'amenity-tv', 'amenity-tv-desc',
         'amenity-wifi', 'amenity-wifi-desc',
-        'amenity-family', 'amenity-family-desc',
-        'amenity-rooms', 'amenity-rooms-desc'
+        'amenity-ac', 'amenity-ac-desc',
+        'amenity-bar', 'amenity-bar-desc'
     ];
     
     amenityElements.forEach(id => {
         const element = document.getElementById(id);
-        const key = id.replace(/-/g, '');
+        // Convert kebab-case to camelCase properly
+        const key = id.replace(/-([a-z])/g, (match, letter) => letter.toUpperCase());
         if (element && content[lang][key]) {
             element.textContent = content[lang][key];
         }
@@ -186,15 +185,6 @@ function setLanguage(lang) {
     
     if (galleryTitle) galleryTitle.textContent = content[lang].galleryTitle;
     if (gallerySubtitle) gallerySubtitle.textContent = content[lang].gallerySubtitle;
-
-    // Testimonials Section
-    const testimonialsTitle = document.getElementById('testimonials-title');
-    if (testimonialsTitle) testimonialsTitle.textContent = content[lang].testimonialsTitle;
-    
-    for (let i = 1; i <= 3; i++) {
-        const testimonial = document.getElementById(`testimonial-${i}`);
-        if (testimonial) testimonial.textContent = content[lang][`testimonial${i}`];
-    }
 
     // Location Section
     const mapTitle = document.getElementById('map-title');
@@ -417,7 +407,7 @@ const observer = new IntersectionObserver(function(entries) {
 
 // Observe elements for animation
 document.addEventListener('DOMContentLoaded', function() {
-    const animatedElements = document.querySelectorAll('.amenity-card, .testimonial-card, .thumb');
+    const animatedElements = document.querySelectorAll('.amenity-card, .thumb');
     animatedElements.forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';
