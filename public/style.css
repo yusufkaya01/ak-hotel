@@ -100,15 +100,17 @@ p {
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.95);
-  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.92);
+  backdrop-filter: blur(15px);
   z-index: 1000;
   transition: all 0.3s ease;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.1);
 }
 
 .navbar.scrolled {
-  background: rgba(0, 0, 0, 0.98);
+  background: rgba(0, 0, 0, 0.95);
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
 }
 
 .nav-container {
@@ -122,22 +124,24 @@ p {
 }
 
 .nav-logo h1 {
-  color: var(--color-gold);
+  color: var(--primary-gold);
   font-family: 'Playfair Display', serif;
   font-size: 1.8rem;
   font-weight: 700;
   letter-spacing: 3px;
   margin: 0;
   text-transform: uppercase;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .nav-subtitle {
-  color: var(--color-text-light);
+  color: var(--text-light);
   font-size: 0.7rem;
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-top: 0.2rem;
-  opacity: 0.9;
+  opacity: 0.95;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .nav-menu {
@@ -150,7 +154,7 @@ p {
 }
 
 .nav-link {
-  color: var(--color-text-light);
+  color: var(--text-light);
   text-decoration: none;
   font-weight: 500;
   font-size: 1rem;
@@ -161,12 +165,14 @@ p {
   position: relative;
   overflow: hidden;
   text-transform: uppercase;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .nav-link:hover {
-  color: var(--color-gold);
+  color: var(--primary-gold);
   background: rgba(212, 175, 55, 0.1);
   transform: translateY(-2px);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .nav-link::before {
@@ -184,28 +190,43 @@ p {
   left: 100%;
 }
 
+.nav-divider {
+  width: 1px;
+  height: 20px;
+  background: var(--primary-gold);
+  opacity: 0.3;
+  margin: 0 0.5rem;
+}
+
 .lang-btn {
-  background: var(--color-gold);
-  color: var(--color-dark);
-  border: 2px solid var(--color-gold);
-  padding: 0.5rem 1rem;
-  border-radius: 25px;
+  background: var(--primary-gold);
+  color: var(--primary-dark);
+  border: 2px solid var(--primary-gold);
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
   cursor: pointer;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   letter-spacing: 1px;
   transition: all 0.3s ease;
   text-transform: uppercase;
   outline: none;
   position: relative;
   overflow: hidden;
+  min-width: 40px;
 }
 
 .lang-btn:hover {
   background: transparent;
-  color: var(--color-gold);
+  color: var(--primary-gold);
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+}
+
+.lang-btn.active {
+  background: var(--primary-gold);
+  color: var(--primary-dark);
+  box-shadow: 0 3px 10px rgba(212, 175, 55, 0.4);
 }
 
 .lang-btn:active {
@@ -235,6 +256,7 @@ p {
   margin: 3px 0;
   transition: 0.3s;
   border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .menu-toggle.active span:nth-child(1) {
@@ -297,8 +319,8 @@ p {
 }
 
 .nav-overlay .lang-btn {
-  margin-top: 2rem;
-  padding: 0.8rem 2rem;
+  margin: 0.5rem;
+  padding: 0.8rem 1.5rem;
   font-size: 1rem;
   background: var(--primary-gold);
   color: var(--primary-dark);
@@ -309,6 +331,7 @@ p {
   letter-spacing: 1px;
   transition: all 0.3s ease;
   text-transform: uppercase;
+  min-width: 60px;
 }
 
 .nav-overlay .lang-btn:hover {
@@ -319,6 +342,33 @@ p {
 .nav-overlay .lang-btn.active {
   background: var(--primary-gold);
   color: var(--primary-dark);
+  box-shadow: 0 3px 10px rgba(212, 175, 55, 0.4);
+}
+
+/* Language buttons layout in mobile */
+.nav-overlay .nav-menu {
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.nav-overlay .nav-menu > .lang-btn {
+  display: inline-block;
+  margin: 0.25rem;
+}
+
+/* Arrange language buttons in a 2x2 grid for mobile */
+.nav-overlay .nav-menu::after {
+  content: '';
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
 }
 
 /* Hero Section */

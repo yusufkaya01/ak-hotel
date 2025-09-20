@@ -124,6 +124,132 @@ const content = {
             "www.akhotel.com"
         ],
         footerText: "© 2025 AK Hotel. Tüm hakları saklıdır. Olağanüstü misafirperverlik tutkusuyla hazırlanmıştır."
+    },
+    de: {
+        // Hero Section
+        heroTitle: "Willkommen im AK Hotel",
+        heroSubtitle: "Erleben Sie Luxus & Komfort im Herzen von Alanya",
+        bookNowBtn: "Jetzt Buchen",
+        exploreBtn: "Entdecken",
+
+        // Welcome Section
+        welcomeTitle: "Außergewöhnliche Gastfreundschaft Erwartet Sie",
+        welcomeText: "Eingebettet in die wunderschöne Küstenstadt Alanya bietet das AK Hotel eine unvergleichliche Mischung aus Luxus, Komfort und authentischer türkischer Gastfreundschaft. Jedes Detail wurde sorgfältig durchdacht, um sicherzustellen, dass Ihr Aufenthalt Ihre Erwartungen übertrifft.",
+
+        // Amenities Section
+        amenitiesTitle: "Hotel Ausstattung & Service",
+        amenitiesSubtitle: "Alles was Sie für einen komfortablen und angenehmen Aufenthalt benötigen",
+        amenityPool: "Schwimmbad",
+        amenityPoolDesc: "Außenpool mit atemberaubender Aussicht zum Entspannen",
+        amenityBreakfast: "Frühstücksservice",
+        amenityBreakfastDesc: "Kostenloses Frühstück mit türkischen und internationalen Optionen",
+        amenityMinibar: "Minibar",
+        amenityMinibarDesc: "Minibar im Zimmer mit Getränken und Snacks",
+        amenitySafe: "Safe",
+        amenitySafeDesc: "Zimmersafe für Ihre Wertsachen und wichtigen Dokumente",
+        amenityTv: "Fernseher",
+        amenityTvDesc: "Flachbildfernseher mit Satellitenkanälen und Unterhaltung",
+        amenityWifi: "Kostenloses WLAN",
+        amenityWifiDesc: "Highspeed-WLAN im gesamten Hotel",
+        amenityAc: "Klimaanlage",
+        amenityAcDesc: "Individuelle Klimaregelung in jedem Zimmer für Ihren Komfort",
+        amenityBar: "Bar Service",
+        amenityBarDesc: "Full-Service-Bar mit lokalen und internationalen Getränken",
+
+        // Gallery Section
+        galleryTitle: "Fotogalerie",
+        gallerySubtitle: "Entdecken Sie die Schönheit und Eleganz des AK Hotels",
+
+        // Location Section
+        mapTitle: "Erstklassige Lage",
+        mapSubtitle: "Perfekt im Herzen von Alanya gelegen, nah zu Stränden, Sehenswürdigkeiten und Restaurants",
+        hotelLocation: "AK Hotel - Alanya, Antalya",
+        contactAddress: "Alanya, Antalya, Türkei",
+        contactPhone: "+90 XXX XXX XXXX",
+        contactEmail: "info@akhotel.com",
+
+        // Footer
+        footerTagline: "Wo Luxus auf authentische türkische Gastfreundschaft trifft",
+        footerServices: "Dienstleistungen",
+        footerServicesList: [
+            "Luxus Unterkunft",
+            "Restaurant & Bar",
+            "Schwimmbad",
+            "Concierge Service",
+            "Kostenloses WLAN",
+            "Strandzugang"
+        ],
+        footerContact: "Kontakt",
+        footerContactList: [
+            "Alanya, Antalya",
+            "+90 XXX XXX XXXX",
+            "info@akhotel.com",
+            "www.akhotel.com"
+        ],
+        footerText: "© 2025 AK Hotel. Alle Rechte vorbehalten. Mit Leidenschaft für außergewöhnliche Gastfreundschaft erstellt."
+    },
+    ru: {
+        // Hero Section
+        heroTitle: "Добро пожаловать в AK Hotel",
+        heroSubtitle: "Испытайте роскошь и комфорт в сердце Аланьи",
+        bookNowBtn: "Забронировать",
+        exploreBtn: "Исследовать",
+
+        // Welcome Section
+        welcomeTitle: "Вас ждёт исключительное гостеприимство",
+        welcomeText: "Расположенный в прекрасном прибрежном городе Алания, AK Hotel предлагает непревзойденное сочетание роскоши, комфорта и подлинного турецкого гостеприимства. Каждая деталь была тщательно продумана, чтобы ваше пребывание превзошло все ожидания.",
+
+        // Amenities Section
+        amenitiesTitle: "Удобства и услуги отеля",
+        amenitiesSubtitle: "Всё необходимое для комфортного и приятного пребывания",
+        amenityPool: "Бассейн",
+        amenityPoolDesc: "Открытый бассейн с потрясающими видами для отдыха",
+        amenityBreakfast: "Завтрак",
+        amenityBreakfastDesc: "Бесплатный завтрак с турецкими и международными блюдами",
+        amenityMinibar: "Мини-бар",
+        amenityMinibarDesc: "Мини-бар в номере с напитками и закусками",
+        amenitySafe: "Сейф",
+        amenitySafeDesc: "Сейф в номере для ваших ценностей и важных документов",
+        amenityTv: "Телевизор",
+        amenityTvDesc: "Плоский телевизор со спутниковыми каналами и развлечениями",
+        amenityWifi: "Бесплатный Wi-Fi",
+        amenityWifiDesc: "Высокоскоростной беспроводной интернет по всему отелю",
+        amenityAc: "Кондиционер",
+        amenityAcDesc: "Индивидуальный климат-контроль в каждом номере для вашего комфорта",
+        amenityBar: "Бар",
+        amenityBarDesc: "Полный бар с местными и международными напитками",
+
+        // Gallery Section
+        galleryTitle: "Фотогалерея",
+        gallerySubtitle: "Откройте для себя красоту и элегантность AK Hotel",
+
+        // Location Section
+        mapTitle: "Превосходное расположение",
+        mapSubtitle: "Идеально расположен в сердце Аланьи, рядом с пляжами, достопримечательностями и ресторанами",
+        hotelLocation: "AK Hotel - Алания, Анталья",
+        contactAddress: "Алания, Анталья, Турция",
+        contactPhone: "+90 XXX XXX XXXX",
+        contactEmail: "info@akhotel.com",
+
+        // Footer
+        footerTagline: "Где роскошь встречается с подлинным турецким гостеприимством",
+        footerServices: "Услуги",
+        footerServicesList: [
+            "Роскошное размещение",
+            "Ресторан и бар",
+            "Бассейн",
+            "Консьерж-сервис",
+            "Бесплатный Wi-Fi",
+            "Доступ к пляжу"
+        ],
+        footerContact: "Контакты",
+        footerContactList: [
+            "Алания, Анталья",
+            "+90 XXX XXX XXXX",
+            "info@akhotel.com",
+            "www.akhotel.com"
+        ],
+        footerText: "© 2025 AK Hotel. Все права защищены. Создано с страстью к исключительному гостеприимству."
     }
 };
 
@@ -236,6 +362,8 @@ function setLanguage(lang) {
     // Update language buttons
     document.getElementById('lang-en').classList.toggle('active', lang === 'en');
     document.getElementById('lang-tr').classList.toggle('active', lang === 'tr');
+    document.getElementById('lang-de').classList.toggle('active', lang === 'de');
+    document.getElementById('lang-ru').classList.toggle('active', lang === 'ru');
     
     // Update gallery captions
     updateCaptions(lang);
@@ -295,6 +423,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Language switching
     document.getElementById('lang-en').addEventListener('click', () => setLanguage('en'));
     document.getElementById('lang-tr').addEventListener('click', () => setLanguage('tr'));
+    document.getElementById('lang-de').addEventListener('click', () => setLanguage('de'));
+    document.getElementById('lang-ru').addEventListener('click', () => setLanguage('ru'));
     
     // Gallery thumbnails
     thumbs.forEach((fig, idx) => {
@@ -438,8 +568,10 @@ function initMobileMenu() {
     // Mobile language buttons
     const langEnMobile = document.getElementById('lang-en-mobile');
     const langTrMobile = document.getElementById('lang-tr-mobile');
+    const langDeMobile = document.getElementById('lang-de-mobile');
+    const langRuMobile = document.getElementById('lang-ru-mobile');
     
-    if (langEnMobile && langTrMobile) {
+    if (langEnMobile && langTrMobile && langDeMobile && langRuMobile) {
         langEnMobile.addEventListener('click', () => {
             setLanguage('en');
             closeMenu();
@@ -448,6 +580,18 @@ function initMobileMenu() {
         
         langTrMobile.addEventListener('click', () => {
             setLanguage('tr');
+            closeMenu();
+            updateMobileLangButtons();
+        });
+        
+        langDeMobile.addEventListener('click', () => {
+            setLanguage('de');
+            closeMenu();
+            updateMobileLangButtons();
+        });
+        
+        langRuMobile.addEventListener('click', () => {
+            setLanguage('ru');
             closeMenu();
             updateMobileLangButtons();
         });
@@ -485,10 +629,14 @@ function closeMenu() {
 function updateMobileLangButtons() {
     const langEnMobile = document.getElementById('lang-en-mobile');
     const langTrMobile = document.getElementById('lang-tr-mobile');
+    const langDeMobile = document.getElementById('lang-de-mobile');
+    const langRuMobile = document.getElementById('lang-ru-mobile');
     
-    if (langEnMobile && langTrMobile) {
+    if (langEnMobile && langTrMobile && langDeMobile && langRuMobile) {
         langEnMobile.classList.toggle('active', currentLang === 'en');
         langTrMobile.classList.toggle('active', currentLang === 'tr');
+        langDeMobile.classList.toggle('active', currentLang === 'de');
+        langRuMobile.classList.toggle('active', currentLang === 'ru');
     }
 }
 
