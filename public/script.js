@@ -405,8 +405,151 @@ const observer = new IntersectionObserver(function(entries) {
     });
 }, observerOptions);
 
-// Observe elements for animation
+// Mobile menu functionality
+function initMobileMenu() {
+    const menuToggle = document.getElementById('menuToggle');
+    const navOverlay = document.getElementById('navOverlay');
+    
+    if (menuToggle && navOverlay) {
+        menuToggle.addEventListener('click', toggleMenu);
+        
+        // Close menu when clicking outside
+        navOverlay.addEventListener('click', (e) => {
+            if (e.target === navOverlay) {
+                closeMenu();
+            }
+        });
+        
+        // Handle escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeMenu();
+            }
+        });
+        
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                closeMenu();
+            }
+        });
+    }
+    
+    // Mobile language buttons
+    const langEnMobile = document.getElementById('lang-en-mobile');
+    const langTrMobile = document.getElementById('lang-tr-mobile');
+    
+    if (langEnMobile && langTrMobile) {
+        langEnMobile.addEventListener('click', () => {
+            setLanguage('en');
+            closeMenu();
+            updateMobileLangButtons();
+        });
+        
+        langTrMobile.addEventListener('click', () => {
+            setLanguage('tr');
+            closeMenu();
+            updateMobileLangButtons();
+        });
+    }
+}
+
+function toggleMenu() {
+    const menuToggle = document.getElementById('menuToggle');
+    const navOverlay = document.getElementById('navOverlay');
+    
+    if (menuToggle && navOverlay) {
+        menuToggle.classList.toggle('active');
+        navOverlay.classList.toggle('active');
+        
+        // Prevent body scroll when menu is open
+        if (navOverlay.classList.contains('active')) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
+    }
+}
+
+function closeMenu() {
+    const menuToggle = document.getElementById('menuToggle');
+    const navOverlay = document.getElementById('navOverlay');
+    
+    if (menuToggle && navOverlay) {
+        menuToggle.classList.remove('active');
+        navOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+}
+
+function updateMobileLangButtons() {
+    const langEnMobile = document.getElementById('lang-en-mobile');
+    const langTrMobile = document.getElementById('lang-tr-mobile');
+    
+    if (langEnMobile && langTrMobile) {
+        langEnMobile.classList.toggle('active', currentLang === 'en');
+        langTrMobile.classList.toggle('active', currentLang === 'tr');
+    }
+}
+
+// Navbar scroll effect
+function initNavbarScroll() {
+    const navbar = document.querySelector('.navbar');
+    let lastScrollY = window.scrollY;
+    
+    window.addEventListener('scroll', () => {
+        const currentScrollY = window.scrollY;
+        
+        if (navbar) {
+            if (currentScrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+            
+            // Hide navbar on scroll down, show on scroll up
+            if (currentScrollY > lastScrollY && currentScrollY > 200) {
+                navbar.style.transform = 'translateY(-100%)';
+            } else {
+                navbar.style.transform = 'translateY(0)';
+            }
+        }
+        
+        lastScrollY = currentScrollY;
+    });
+}
+
+// Touch-friendly interactions
+function initTouchOptimizations() {
+    // Add touch feedback to buttons
+    const touchElements = document.querySelectorAll('.btn-primary, .btn-secondary, .lang-btn, .nav-link');
+    
+    touchElements.forEach(element => {
+        element.addEventListener('touchstart', function() {
+            this.style.transform = 'scale(0.95)';
+        });
+        
+        element.addEventListener('touchend', function() {
+            this.style.transform = '';
+        });
+    });
+    
+    // Optimize gallery for touch
+    const galleryThumbs = document.querySelectorAll('.thumb');
+    galleryThumbs.forEach(thumb => {
+        thumb.addEventListener('touchstart', function() {
+            this.style.transform = 'scale(0.98)';
+        });
+        
+        thumb.addEventListener('touchend', function() {
+            this.style.transform = '';
+        });
+    });
+}
+
+// Initialize all responsive features
 document.addEventListener('DOMContentLoaded', function() {
+    // Existing initialization code...
     const animatedElements = document.querySelectorAll('.amenity-card, .thumb');
     animatedElements.forEach(el => {
         el.style.opacity = '0';
@@ -414,5 +557,11 @@ document.addEventListener('DOMContentLoaded', function() {
         el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(el);
     });
+    
+    // Initialize responsive features
+    initMobileMenu();
+    initNavbarScroll();
+    initTouchOptimizations();
+    updateMobileLangButtons();
 });
 

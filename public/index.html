@@ -17,7 +17,14 @@
                 <h1 id="hotel-name">AK HOTEL</h1>
                 <span class="nav-subtitle">LUXURY & COMFORT</span>
             </div>
-            <div class="nav-menu">
+            
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <div class="nav-menu" id="navMenu">
                 <a href="#home" class="nav-link">Home</a>
                 <a href="#amenities" class="nav-link">Amenities</a>
                 <a href="#gallery" class="nav-link">Gallery</a>
@@ -25,6 +32,17 @@
                 <div class="nav-divider"></div>
                 <button id="lang-en" class="lang-btn active">EN</button>
                 <button id="lang-tr" class="lang-btn">TR</button>
+            </div>
+        </div>
+        
+        <div class="nav-overlay" id="navOverlay">
+            <div class="nav-menu">
+                <a href="#home" class="nav-link" onclick="closeMenu()">Home</a>
+                <a href="#amenities" class="nav-link" onclick="closeMenu()">Amenities</a>
+                <a href="#gallery" class="nav-link" onclick="closeMenu()">Gallery</a>
+                <a href="#location" class="nav-link" onclick="closeMenu()">Location</a>
+                <button id="lang-en-mobile" class="lang-btn">EN</button>
+                <button id="lang-tr-mobile" class="lang-btn">TR</button>
             </div>
         </div>
     </nav>
