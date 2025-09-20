@@ -3,47 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ak Hotel</title>
+    <title>Ak Hotel - Luxury Hospitality in Alanya</title>
+    <meta name="description" content="Experience unparalleled luxury at Ak Hotel in Alanya. Premium accommodations, exceptional service, and modern amenities await you.">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1 id="hotel-name">Ak Hotel</h1>
-        <nav>
-            <button id="lang-en">English</button>
-            <button id="lang-tr">Türkçe</button>
-        </nav>
-    </header>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1 id="hotel-name">AK HOTEL</h1>
+                <span class="nav-subtitle">LUXURY & COMFORT</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#amenities" class="nav-link">Amenities</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#location" class="nav-link">Location</a>
+                <div class="nav-divider"></div>
+                <button id="lang-en" class="lang-btn active">EN</button>
+                <button id="lang-tr" class="lang-btn">TR</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 id="hero-title" class="hero-title"></h1>
+            <p id="hero-subtitle" class="hero-subtitle"></p>
+            <div class="hero-buttons">
+                <button id="book-now-btn" class="btn-primary"></button>
+                <button id="explore-btn" class="btn-secondary"></button>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span class="scroll-text">Scroll to explore</span>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </section>
+
     <main>
-        <section id="welcome-section">
-            <h2 id="welcome-title"></h2>
-            <p id="welcome-text"></p>
+        <!-- Welcome Section -->
+        <section id="welcome-section" class="welcome">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="welcome-title"></h2>
+                    <div class="section-divider"></div>
+                    <p id="welcome-text"></p>
+                </div>
+            </div>
         </section>
-        <section id="hotel-info">
-            <h3 id="hotel-location"></h3>
-            <ul id="hotel-features"></ul>
+
+        <!-- Amenities Section -->
+        <section id="amenities" class="amenities">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="amenities-title"></h2>
+                    <div class="section-divider"></div>
+                    <p id="amenities-subtitle"></p>
+                </div>
+                <div class="amenities-grid">
+                    <div class="amenity-card">
+                        <div class="amenity-icon">🏖️</div>
+                        <h3 id="amenity-beach"></h3>
+                        <p id="amenity-beach-desc"></p>
+                    </div>
+                    <div class="amenity-card">
+                        <div class="amenity-icon">🏊‍♂️</div>
+                        <h3 id="amenity-pool"></h3>
+                        <p id="amenity-pool-desc"></p>
+                    </div>
+                    <div class="amenity-card">
+                        <div class="amenity-icon">🍽️</div>
+                        <h3 id="amenity-dining"></h3>
+                        <p id="amenity-dining-desc"></p>
+                    </div>
+                    <div class="amenity-card">
+                        <div class="amenity-icon">📶</div>
+                        <h3 id="amenity-wifi"></h3>
+                        <p id="amenity-wifi-desc"></p>
+                    </div>
+                    <div class="amenity-card">
+                        <div class="amenity-icon">👨‍👩‍👧‍👦</div>
+                        <h3 id="amenity-family"></h3>
+                        <p id="amenity-family-desc"></p>
+                    </div>
+                    <div class="amenity-card">
+                        <div class="amenity-icon">🛏️</div>
+                        <h3 id="amenity-rooms"></h3>
+                        <p id="amenity-rooms-desc"></p>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section id="gallery-section">
-            <h3 id="gallery-title"></h3>
-            <div class="gallery">
-                <figure class="thumb" data-src="images/hotel-outside-3.JPG" data-caption-en="Hotel Outside" data-caption-tr="Otel Dış Görünüşü"><img src="images/hotel-outside-3.JPG" alt="Hotel Outside"><figcaption class="caption"></figcaption></figure>
-                <figure class="thumb" data-src="images/hotel-pool-1.JPG" data-caption-en="Pool (night)" data-caption-tr="Havuz (gece)"><img src="images/hotel-pool-1.JPG" alt="Pool night"><figcaption class="caption"></figcaption></figure>
-                <figure class="thumb" data-src="images/hotel-pool-2.JPG" data-caption-en="Pool (day)" data-caption-tr="Havuz (gündüz)"><img src="images/hotel-pool-2.JPG" alt="Pool day"><figcaption class="caption"></figcaption></figure>
-                <figure class="thumb" data-src="images/hotel-pool-3.JPG" data-caption-en="Pool area" data-caption-tr="Havuz alanı"><img src="images/hotel-pool-3.JPG" alt="Pool 2"><figcaption class="caption"></figcaption></figure>
-                <figure class="thumb" data-src="images/hotel-cafetaria-1.JPG" data-caption-en="Cafeteria" data-caption-tr="Kafeterya"><img src="images/hotel-cafetaria-1.JPG" alt="Cafeteria 1"><figcaption class="caption"></figcaption></figure>
-                <figure class="thumb" data-src="images/hotel-cafetaria-2.JPG" data-caption-en="Cafeteria seating" data-caption-tr="Kafeterya oturma"><img src="images/hotel-cafetaria-2.JPG" alt="Cafeteria 2"><figcaption class="caption"></figcaption></figure>
-                <figure class="thumb" data-src="images/hotel-cafetaria-3.JPG" data-caption-en="Breakfast area" data-caption-tr="Kahvaltı alanı"><img src="images/hotel-cafetaria-3.JPG" alt="Cafeteria 3"><figcaption class="caption"></figcaption></figure>
-                <figure class="thumb" data-src="images/hotel-cafetaria-4.JPG" data-caption-en="Bar counter" data-caption-tr="Bar tezgahı"><img src="images/hotel-cafetaria-4.JPG" alt="Cafeteria 4"><figcaption class="caption"></figcaption></figure>
-                <figure class="thumb" data-src="images/hotel-hall-1.JPG" data-caption-en="Hotel Hall" data-caption-tr="Otel Lobi"><img src="images/hotel-hall-1.JPG" alt="Hotel Hall"><figcaption class="caption"></figcaption></figure>
-                <figure class="thumb" data-src="images/room-1.JPG" data-caption-en="Room example" data-caption-tr="Oda örneği"><img src="images/room-1.JPG" alt="Room 1"><figcaption class="caption"></figcaption></figure>
-                <figure class="thumb" data-src="images/room-2.JPG" data-caption-en="Room interior" data-caption-tr="Oda içi"><img src="images/room-2.JPG" alt="Room 2"><figcaption class="caption"></figcaption></figure>
-                <figure class="thumb" data-src="images/room-3.JPG" data-caption-en="Twin beds" data-caption-tr="İkiz yataklar"><img src="images/room-3.JPG" alt="Room 3"><figcaption class="caption"></figcaption></figure>
-                <figure class="thumb" data-src="images/room-bath-1.JPG" data-caption-en="Bathroom" data-caption-tr="Banyo"><img src="images/room-bath-1.JPG" alt="Room bathroom"><figcaption class="caption"></figcaption></figure>
-                <figure class="thumb" data-src="images/room-entrance-1.JPG" data-caption-en="Room entrance" data-caption-tr="Oda girişi"><img src="images/room-entrance-1.JPG" alt="Room entrance"><figcaption class="caption"></figcaption></figure>
-                <figure class="thumb" data-src="images/hotel-flowers-1.JPG" data-caption-en="Flowers" data-caption-tr="Çiçekler"><img src="images/hotel-flowers-1.JPG" alt="Flowers 1"><figcaption class="caption"></figcaption></figure>
-                <figure class="thumb" data-src="images/hotel-flowers-2.JPG" data-caption-en="Garden detail" data-caption-tr="Bahçe detayı"><img src="images/hotel-flowers-2.JPG" alt="Flowers 2"><figcaption class="caption"></figcaption></figure>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="gallery-title"></h2>
+                    <div class="section-divider"></div>
+                    <p id="gallery-subtitle"></p>
+                </div>
+                <div class="gallery">
+                    <figure class="thumb" data-src="images/hotel-outside-3.JPG" data-caption-en="Hotel Exterior" data-caption-tr="Otel Dış Görünüşü">
+                        <img src="images/hotel-outside-3.JPG" alt="Hotel Outside">
+                        <figcaption class="caption"></figcaption>
+                    </figure>
+                    <figure class="thumb" data-src="images/hotel-pool-1.JPG" data-caption-en="Pool (Evening)" data-caption-tr="Havuz (Akşam)">
+                        <img src="images/hotel-pool-1.JPG" alt="Pool night">
+                        <figcaption class="caption"></figcaption>
+                    </figure>
+                    <figure class="thumb" data-src="images/hotel-pool-2.JPG" data-caption-en="Pool (Daytime)" data-caption-tr="Havuz (Gündüz)">
+                        <img src="images/hotel-pool-2.JPG" alt="Pool day">
+                        <figcaption class="caption"></figcaption>
+                    </figure>
+                    <figure class="thumb" data-src="images/hotel-pool-3.JPG" data-caption-en="Pool Terrace" data-caption-tr="Havuz Terası">
+                        <img src="images/hotel-pool-3.JPG" alt="Pool 2">
+                        <figcaption class="caption"></figcaption>
+                    </figure>
+                    <figure class="thumb" data-src="images/hotel-cafetaria-1.JPG" data-caption-en="Breakfast Area" data-caption-tr="Kahvaltı Alanı">
+                        <img src="images/hotel-cafetaria-1.JPG" alt="Breakfast Area">
+                        <figcaption class="caption"></figcaption>
+                    </figure>
+                    <figure class="thumb" data-src="images/hotel-cafetaria-2.JPG" data-caption-en="Dining Lounge" data-caption-tr="Yemek Salonu">
+                        <img src="images/hotel-cafetaria-2.JPG" alt="Dining Area">
+                        <figcaption class="caption"></figcaption>
+                    </figure>
+                    <figure class="thumb" data-src="images/hotel-cafetaria-3.JPG" data-caption-en="Bar Counter" data-caption-tr="Bar Tezgahı">
+                        <img src="images/hotel-cafetaria-3.JPG" alt="Bar Counter">
+                        <figcaption class="caption"></figcaption>
+                    </figure>
+                    <figure class="thumb" data-src="images/hotel-cafetaria-4.JPG" data-caption-en="Rest Area" data-caption-tr="Dinlenme Alanı">
+                        <img src="images/hotel-cafetaria-4.JPG" alt="Rest Area">
+                        <figcaption class="caption"></figcaption>
+                    </figure>
+                    <figure class="thumb" data-src="images/hotel-hall-1.JPG" data-caption-en="Elegant Lobby" data-caption-tr="Şık Lobi">
+                        <img src="images/hotel-hall-1.JPG" alt="Hotel Hall">
+                        <figcaption class="caption"></figcaption>
+                    </figure>
+                    <figure class="thumb" data-src="images/room-1.JPG" data-caption-en="Premium Suite" data-caption-tr="Premium Süit">
+                        <img src="images/room-1.JPG" alt="Room 1">
+                        <figcaption class="caption"></figcaption>
+                    </figure>
+                    <figure class="thumb" data-src="images/room-2.JPG" data-caption-en="Room Interior" data-caption-tr="Oda İçi">
+                        <img src="images/room-2.JPG" alt="Room 2">
+                        <figcaption class="caption"></figcaption>
+                    </figure>
+                    <figure class="thumb" data-src="images/room-3.JPG" data-caption-en="Twin Bedroom" data-caption-tr="İkiz Yatak Odası">
+                        <img src="images/room-3.JPG" alt="Room 3">
+                        <figcaption class="caption"></figcaption>
+                    </figure>
+                    <figure class="thumb" data-src="images/room-bath-1.JPG" data-caption-en="Luxury Bathroom" data-caption-tr="Lüks Banyo">
+                        <img src="images/room-bath-1.JPG" alt="Room bathroom">
+                        <figcaption class="caption"></figcaption>
+                    </figure>
+                    <figure class="thumb" data-src="images/room-entrance-1.JPG" data-caption-en="Suite Entrance" data-caption-tr="Süit Girişi">
+                        <img src="images/room-entrance-1.JPG" alt="Room entrance">
+                        <figcaption class="caption"></figcaption>
+                    </figure>
+                    <figure class="thumb" data-src="images/hotel-flowers-1.JPG" data-caption-en="Garden Flowers" data-caption-tr="Bahçe Çiçekleri">
+                        <img src="images/hotel-flowers-1.JPG" alt="Flowers 1">
+                        <figcaption class="caption"></figcaption>
+                    </figure>
+                    <figure class="thumb" data-src="images/hotel-flowers-2.JPG" data-caption-en="Landscape Design" data-caption-tr="Peyzaj Tasarımı">
+                        <img src="images/hotel-flowers-2.JPG" alt="Flowers 2">
+                        <figcaption class="caption"></figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="testimonials-title"></h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p id="testimonial-1"></p>
+                        <div class="testimonial-author">
+                            <strong>Sarah M.</strong>
+                            <span>Germany</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p id="testimonial-2"></p>
+                        <div class="testimonial-author">
+                            <strong>Marco R.</strong>
+                            <span>Italy</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p id="testimonial-3"></p>
+                        <div class="testimonial-author">
+                            <strong>Ahmed K.</strong>
+                            <span>Turkey</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -58,18 +225,65 @@
             <button class="lb-next" aria-label="Next">›</button>
         </div>
     </main>
-    <section id="map-section">
-        <div class="map-container">
-            <h3 id="map-title"></h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6410.767370432717!2d32.0119527881024!3d36.544860626110584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14dc9860e2509b69%3A0xbf11b09d2bf55ead!2sAk%20Hotel!5e0!3m2!1sen!2str!4v1758354360735!5m2!1sen!2str" width="100%" height="320" style="border:0; border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,0.08);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <!-- Location Section -->
+    <section id="location" class="map-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 id="map-title"></h2>
+                <div class="section-divider"></div>
+                <p id="map-subtitle"></p>
+            </div>
+            <div class="location-content">
+                <div class="location-info">
+                    <h3 id="hotel-location"></h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <span id="contact-address"></span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <span id="contact-phone"></span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">✉️</span>
+                            <span id="contact-email"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6410.767370432717!2d32.0119527881024!3d36.544860626110584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14dc9860e2509b69%3A0xbf11b09d2bf55ead!2sAk%20Hotel!5e0!3m2!1sen!2str!4v1758354360735!5m2!1sen!2str" width="100%" height="400" style="border:0; border-radius:15px; box-shadow:0 10px 30px rgba(0,0,0,0.1);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer>
-        <div class="footer-content">
-            <p id="footer-text"></p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>AK HOTEL</h3>
+                    <p id="footer-tagline"></p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4 id="footer-services"></h4>
+                        <ul id="footer-services-list"></ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4 id="footer-contact"></h4>
+                        <ul id="footer-contact-list"></ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p id="footer-text"></p>
+            </div>
         </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
