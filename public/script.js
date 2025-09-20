@@ -35,7 +35,7 @@ const content = {
         gallerySubtitle: "Discover the beauty and elegance of AK Hotel",
 
         // Location Section
-        mapTitle: "Our Prime Location",
+        mapTitle: "Location",
         mapSubtitle: "Perfectly situated in the heart of Alanya, close to beaches, attractions, and dining",
         hotelLocation: "AK Hotel - Alanya, Antalya",
         contactAddress: "Alanya, Antalya, Turkey",
@@ -101,7 +101,7 @@ const content = {
         gallerySubtitle: "AK Hotel'in güzelliğini ve zarafetini keşfedin",
 
         // Location Section
-        mapTitle: "Birinci Sınıf Konumumuz",
+        mapTitle: "Konum",
         mapSubtitle: "Alanya'nın kalbinde mükemmel konumda, plajlara, turistik yerlere ve restoranların yakını",
         hotelLocation: "AK Hotel - Alanya, Antalya",
         contactAddress: "Alanya, Antalya, Türkiye",
@@ -167,7 +167,7 @@ const content = {
         gallerySubtitle: "Entdecken Sie die Schönheit und Eleganz des AK Hotels",
 
         // Location Section
-        mapTitle: "Erstklassige Lage",
+        mapTitle: "Standort",
         mapSubtitle: "Perfekt im Herzen von Alanya gelegen, nah zu Stränden, Sehenswürdigkeiten und Restaurants",
         hotelLocation: "AK Hotel - Alanya, Antalya",
         contactAddress: "Alanya, Antalya, Türkei",
@@ -233,7 +233,7 @@ const content = {
         gallerySubtitle: "Откройте для себя красоту и элегантность AK Hotel",
 
         // Location Section
-        mapTitle: "Превосходное расположение",
+        mapTitle: "Местоположение",
         mapSubtitle: "Идеально расположен в сердце Аланьи, рядом с пляжами, достопримечательностями и ресторанами",
         hotelLocation: "AK Hotel - Алания, Анталья",
         contactAddress: "Алания, Анталья, Турция",
