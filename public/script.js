@@ -42,6 +42,9 @@ const content = {
         contactPhone: "+90 XXX XXX XXXX",
         contactEmail: "info@akhotel.com",
 
+        // WhatsApp
+        whatsappTooltip: "Contact us on WhatsApp",
+
         // Footer
         footerTagline: "Where luxury meets authentic Turkish hospitality",
         footerServices: "Services",
@@ -104,6 +107,9 @@ const content = {
         contactAddress: "Alanya, Antalya, Türkiye",
         contactPhone: "+90 XXX XXX XXXX",
         contactEmail: "info@akhotel.com",
+
+        // WhatsApp
+        whatsappTooltip: "WhatsApp ile iletişime geçin",
 
         // Footer
         footerTagline: "Lüksün otantik Türk misafirperverliği ile buluştuğu yer",
@@ -168,6 +174,9 @@ const content = {
         contactPhone: "+90 XXX XXX XXXX",
         contactEmail: "info@akhotel.com",
 
+        // WhatsApp
+        whatsappTooltip: "Kontaktieren Sie uns über WhatsApp",
+
         // Footer
         footerTagline: "Wo Luxus auf authentische türkische Gastfreundschaft trifft",
         footerServices: "Dienstleistungen",
@@ -230,6 +239,9 @@ const content = {
         contactAddress: "Алания, Анталья, Турция",
         contactPhone: "+90 XXX XXX XXXX",
         contactEmail: "info@akhotel.com",
+
+        // WhatsApp
+        whatsappTooltip: "Свяжитесь с нами через WhatsApp",
 
         // Footer
         footerTagline: "Где роскошь встречается с подлинным турецким гостеприимством",
@@ -357,6 +369,12 @@ function setLanguage(lang) {
             li.textContent = contact;
             footerContactList.appendChild(li);
         });
+    }
+
+    // Update WhatsApp button tooltip
+    const whatsappBtn = document.getElementById('whatsapp-btn');
+    if (whatsappBtn) {
+        whatsappBtn.setAttribute('title', content[lang].whatsappTooltip);
     }
 
     // Update language buttons
@@ -695,6 +713,44 @@ function initTouchOptimizations() {
     });
 }
 
+// WhatsApp button functionality
+function initWhatsAppButton() {
+    const whatsappBtn = document.getElementById('whatsapp-btn');
+    if (!whatsappBtn) return;
+    
+    // Show/hide WhatsApp button based on scroll
+    let isVisible = false;
+    
+    function toggleWhatsAppVisibility() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const shouldShow = scrollTop > 300; // Show after scrolling 300px
+        
+        if (shouldShow && !isVisible) {
+            whatsappBtn.style.transform = 'scale(1)';
+            whatsappBtn.style.opacity = '1';
+            isVisible = true;
+        } else if (!shouldShow && isVisible) {
+            whatsappBtn.style.transform = 'scale(0)';
+            whatsappBtn.style.opacity = '0';
+            isVisible = false;
+        }
+    }
+    
+    // Initial state - hidden
+    whatsappBtn.style.transform = 'scale(0)';
+    whatsappBtn.style.opacity = '0';
+    whatsappBtn.style.transition = 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)';
+    
+    // Listen to scroll events
+    window.addEventListener('scroll', toggleWhatsAppVisibility);
+    
+    // Add click analytics (optional)
+    whatsappBtn.addEventListener('click', function() {
+        // You can add analytics tracking here
+        console.log('WhatsApp button clicked');
+    });
+}
+
 // Initialize all responsive features
 document.addEventListener('DOMContentLoaded', function() {
     // Existing initialization code...
@@ -710,6 +766,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initMobileMenu();
     initNavbarScroll();
     initTouchOptimizations();
+    initWhatsAppButton();
     updateMobileLangButtons();
 });
 
