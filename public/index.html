@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ak Hotel</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="hotel-name">Ak Hotel</h1>
+        <nav>
+            <button id="lang-en">English</button>
+            <button id="lang-tr">Türkçe</button>
+        </nav>
+    </header>
+    <main>
+        <section id="welcome-section">
+            <h2 id="welcome-title"></h2>
+            <p id="welcome-text"></p>
+        </section>
+        <section id="hotel-info">
+            <h3 id="hotel-location"></h3>
+            <ul id="hotel-features"></ul>
+        </section>
+        <section id="gallery-section">
+            <h3 id="gallery-title"></h3>
+            <div class="gallery">
+                <figure class="thumb" data-src="images/hotel-outside-3.JPG" data-caption-en="Hotel Outside" data-caption-tr="Otel Dış Görünüşü"><img src="images/hotel-outside-3.JPG" alt="Hotel Outside"><figcaption class="caption"></figcaption></figure>
+                <figure class="thumb" data-src="images/hotel-pool-1.JPG" data-caption-en="Pool (night)" data-caption-tr="Havuz (gece)"><img src="images/hotel-pool-1.JPG" alt="Pool night"><figcaption class="caption"></figcaption></figure>
+                <figure class="thumb" data-src="images/hotel-pool-2.JPG" data-caption-en="Pool (day)" data-caption-tr="Havuz (gündüz)"><img src="images/hotel-pool-2.JPG" alt="Pool day"><figcaption class="caption"></figcaption></figure>
+                <figure class="thumb" data-src="images/hotel-pool-3.JPG" data-caption-en="Pool area" data-caption-tr="Havuz alanı"><img src="images/hotel-pool-3.JPG" alt="Pool 2"><figcaption class="caption"></figcaption></figure>
+                <figure class="thumb" data-src="images/hotel-cafetaria-1.JPG" data-caption-en="Cafeteria" data-caption-tr="Kafeterya"><img src="images/hotel-cafetaria-1.JPG" alt="Cafeteria 1"><figcaption class="caption"></figcaption></figure>
+                <figure class="thumb" data-src="images/hotel-cafetaria-2.JPG" data-caption-en="Cafeteria seating" data-caption-tr="Kafeterya oturma"><img src="images/hotel-cafetaria-2.JPG" alt="Cafeteria 2"><figcaption class="caption"></figcaption></figure>
+                <figure class="thumb" data-src="images/hotel-cafetaria-3.JPG" data-caption-en="Breakfast area" data-caption-tr="Kahvaltı alanı"><img src="images/hotel-cafetaria-3.JPG" alt="Cafeteria 3"><figcaption class="caption"></figcaption></figure>
+                <figure class="thumb" data-src="images/hotel-cafetaria-4.JPG" data-caption-en="Bar counter" data-caption-tr="Bar tezgahı"><img src="images/hotel-cafetaria-4.JPG" alt="Cafeteria 4"><figcaption class="caption"></figcaption></figure>
+                <figure class="thumb" data-src="images/hotel-hall-1.JPG" data-caption-en="Hotel Hall" data-caption-tr="Otel Lobi"><img src="images/hotel-hall-1.JPG" alt="Hotel Hall"><figcaption class="caption"></figcaption></figure>
+                <figure class="thumb" data-src="images/room-1.JPG" data-caption-en="Room example" data-caption-tr="Oda örneği"><img src="images/room-1.JPG" alt="Room 1"><figcaption class="caption"></figcaption></figure>
+                <figure class="thumb" data-src="images/room-2.JPG" data-caption-en="Room interior" data-caption-tr="Oda içi"><img src="images/room-2.JPG" alt="Room 2"><figcaption class="caption"></figcaption></figure>
+                <figure class="thumb" data-src="images/room-3.JPG" data-caption-en="Twin beds" data-caption-tr="İkiz yataklar"><img src="images/room-3.JPG" alt="Room 3"><figcaption class="caption"></figcaption></figure>
+                <figure class="thumb" data-src="images/room-bath-1.JPG" data-caption-en="Bathroom" data-caption-tr="Banyo"><img src="images/room-bath-1.JPG" alt="Room bathroom"><figcaption class="caption"></figcaption></figure>
+                <figure class="thumb" data-src="images/room-entrance-1.JPG" data-caption-en="Room entrance" data-caption-tr="Oda girişi"><img src="images/room-entrance-1.JPG" alt="Room entrance"><figcaption class="caption"></figcaption></figure>
+                <figure class="thumb" data-src="images/hotel-flowers-1.JPG" data-caption-en="Flowers" data-caption-tr="Çiçekler"><img src="images/hotel-flowers-1.JPG" alt="Flowers 1"><figcaption class="caption"></figcaption></figure>
+                <figure class="thumb" data-src="images/hotel-flowers-2.JPG" data-caption-en="Garden detail" data-caption-tr="Bahçe detayı"><img src="images/hotel-flowers-2.JPG" alt="Flowers 2"><figcaption class="caption"></figcaption></figure>
+            </div>
+        </section>
+
+        <!-- Lightbox modal -->
+        <div id="lightbox" class="lightbox hidden" aria-hidden="true">
+            <button class="lb-close" aria-label="Close">×</button>
+            <button class="lb-prev" aria-label="Previous">‹</button>
+            <div class="lb-inner">
+                <img id="lb-image" src="" alt="" />
+                <div id="lb-caption" class="lb-caption"></div>
+            </div>
+            <button class="lb-next" aria-label="Next">›</button>
+        </div>
+    </main>
+    <section id="map-section">
+        <div class="map-container">
+            <h3 id="map-title"></h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6410.767370432717!2d32.0119527881024!3d36.544860626110584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14dc9860e2509b69%3A0xbf11b09d2bf55ead!2sAk%20Hotel!5e0!3m2!1sen!2str!4v1758354360735!5m2!1sen!2str" width="100%" height="320" style="border:0; border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,0.08);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p id="footer-text"></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
