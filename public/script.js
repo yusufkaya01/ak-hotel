@@ -1,5 +1,11 @@
 const content = {
     en: {
+        // Navigation
+        navHome: "Home",
+        navAmenities: "Amenities",
+        navGallery: "Gallery",
+        navLocation: "Location",
+        
         // Hero Section
         heroTitle: "Welcome to AK Hotel",
         heroSubtitle: "Experience Luxury & Comfort in the Heart of Alanya",
@@ -66,6 +72,12 @@ const content = {
         footerText: "© 2025 AK Hotel. All rights reserved. Crafted with passion for exceptional hospitality."
     },
     tr: {
+        // Navigation
+        navHome: "Ana Sayfa",
+        navAmenities: "Olanaklar",
+        navGallery: "Galeri",
+        navLocation: "Konum",
+        
         // Hero Section
         heroTitle: "AK Hotel'e Hoşgeldiniz",
         heroSubtitle: "Alanya'nın Kalbinde Lüks ve Konfor Deneyimi",
@@ -132,6 +144,12 @@ const content = {
         footerText: "© 2025 AK Hotel. Tüm hakları saklıdır. Olağanüstü misafirperverlik tutkusuyla hazırlanmıştır."
     },
     de: {
+        // Navigation
+        navHome: "Startseite",
+        navAmenities: "Ausstattung",
+        navGallery: "Galerie",
+        navLocation: "Standort",
+        
         // Hero Section
         heroTitle: "Willkommen im AK Hotel",
         heroSubtitle: "Erleben Sie Luxus & Komfort im Herzen von Alanya",
@@ -198,6 +216,12 @@ const content = {
         footerText: "© 2025 AK Hotel. Alle Rechte vorbehalten. Mit Leidenschaft für außergewöhnliche Gastfreundschaft erstellt."
     },
     ru: {
+        // Navigation
+        navHome: "Главная",
+        navAmenities: "Удобства",
+        navGallery: "Галерея",
+        navLocation: "Расположение",
+        
         // Hero Section
         heroTitle: "Добро пожаловать в AK Hotel",
         heroSubtitle: "Испытайте роскошь и комфорт в сердце Аланьи",
@@ -270,6 +294,25 @@ let currentLang = 'en';
 
 function setLanguage(lang) {
     currentLang = lang;
+    
+    // Navigation Menu
+    const navHome = document.getElementById('nav-home');
+    const navAmenities = document.getElementById('nav-amenities');
+    const navGallery = document.getElementById('nav-gallery');
+    const navLocation = document.getElementById('nav-location');
+    const navHomeMobile = document.getElementById('nav-home-mobile');
+    const navAmenitiesMobile = document.getElementById('nav-amenities-mobile');
+    const navGalleryMobile = document.getElementById('nav-gallery-mobile');
+    const navLocationMobile = document.getElementById('nav-location-mobile');
+    
+    if (navHome) navHome.textContent = content[lang].navHome;
+    if (navAmenities) navAmenities.textContent = content[lang].navAmenities;
+    if (navGallery) navGallery.textContent = content[lang].navGallery;
+    if (navLocation) navLocation.textContent = content[lang].navLocation;
+    if (navHomeMobile) navHomeMobile.textContent = content[lang].navHome;
+    if (navAmenitiesMobile) navAmenitiesMobile.textContent = content[lang].navAmenities;
+    if (navGalleryMobile) navGalleryMobile.textContent = content[lang].navGallery;
+    if (navLocationMobile) navLocationMobile.textContent = content[lang].navLocation;
     
     // Hero Section
     const heroTitle = document.getElementById('hero-title');
