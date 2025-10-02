@@ -73,7 +73,7 @@ const content = {
     },
     tr: {
         // Navigation
-        navHome: "Ana Sayfa",
+        navHome: "AnaSayfa",
         navAmenities: "Olanaklar",
         navGallery: "Galeri",
         navLocation: "Konum",
