@@ -11,6 +11,7 @@ const content = {
         heroSubtitle: "Experience Luxury & Comfort in the Heart of Alanya",
         bookNowBtn: "Book Now",
         exploreBtn: "Explore",
+        scrollText: "Scroll to explore",
 
         // Welcome Section
         welcomeTitle: "Exceptional Hospitality Awaits",
@@ -83,6 +84,7 @@ const content = {
         heroSubtitle: "Alanya'nın Kalbinde Lüks ve Konfor Deneyimi",
         bookNowBtn: "Rezervasyon",
         exploreBtn: "Keşfet",
+        scrollText: "Keşfetmek için kaydırın",
 
         // Welcome Section
         welcomeTitle: "Olağanüstü Misafirperverlik Sizi Bekliyor",
@@ -155,6 +157,7 @@ const content = {
         heroSubtitle: "Erleben Sie Luxus & Komfort im Herzen von Alanya",
         bookNowBtn: "Jetzt Buchen",
         exploreBtn: "Entdecken",
+        scrollText: "Scrollen zum Entdecken",
 
         // Welcome Section
         welcomeTitle: "Außergewöhnliche Gastfreundschaft Erwartet Sie",
@@ -227,6 +230,7 @@ const content = {
         heroSubtitle: "Испытайте роскошь и комфорт в сердце Аланьи",
         bookNowBtn: "Забронировать",
         exploreBtn: "Исследовать",
+        scrollText: "Прокрутите для исследования",
 
         // Welcome Section
         welcomeTitle: "Вас ждёт исключительное гостеприимство",
@@ -319,11 +323,13 @@ function setLanguage(lang) {
     const heroSubtitle = document.getElementById('hero-subtitle');
     const bookNowBtn = document.getElementById('book-now-btn');
     const exploreBtn = document.getElementById('explore-btn');
+    const scrollText = document.getElementById('scroll-text');
     
     if (heroTitle) heroTitle.textContent = content[lang].heroTitle;
     if (heroSubtitle) heroSubtitle.textContent = content[lang].heroSubtitle;
     if (bookNowBtn) bookNowBtn.textContent = content[lang].bookNowBtn;
     if (exploreBtn) exploreBtn.textContent = content[lang].exploreBtn;
+    if (scrollText) scrollText.textContent = content[lang].scrollText;
 
     // Welcome Section
     const welcomeTitle = document.getElementById('welcome-title');
