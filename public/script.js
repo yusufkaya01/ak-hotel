@@ -7,14 +7,14 @@ const content = {
         navLocation: "Location",
         
         // Hero Section
-        heroTitle: "Welcome to AK Hotel",
+        heroTitle: "Welcome to Ak Otel",
         heroSubtitle: "Experience Luxury & Comfort in the Heart of Alanya",
         bookNowBtn: "Book Now",
         exploreBtn: "Explore",
 
         // Welcome Section
         welcomeTitle: "Exceptional Hospitality Awaits",
-        welcomeText: "Nestled in the beautiful coastal city of Alanya, AK Hotel offers an unparalleled blend of luxury, comfort, and authentic Turkish hospitality. Every detail has been carefully crafted to ensure your stay exceeds expectations.",
+        welcomeText: "Nestled in the beautiful coastal city of Alanya, Ak Otel offers an unparalleled blend of luxury, comfort, and authentic Turkish hospitality. Every detail has been carefully crafted to ensure your stay exceeds expectations.",
 
         // Amenities Section
         amenitiesTitle: "Hotel Amenities & Services",
@@ -38,15 +38,15 @@ const content = {
 
         // Gallery Section
         galleryTitle: "Photo Gallery",
-        gallerySubtitle: "Discover the beauty and elegance of AK Hotel",
+        gallerySubtitle: "Discover the beauty and elegance of Ak Otel",
 
         // Location Section
         mapTitle: "Location",
         mapSubtitle: "Perfectly situated in the heart of Alanya, close to beaches, attractions, and dining",
-        hotelLocation: "AK Hotel - Alanya, Antalya",
+        hotelLocation: "Ak Otel - Alanya, Antalya",
         contactAddress: "Alanya, Antalya, Turkey",
         contactPhone: "+90 XXX XXX XXXX",
-        contactEmail: "info@akhotel.com",
+        contactEmail: "info@akotel.com.tr",
 
         // WhatsApp
         whatsappTooltip: "Contact us on WhatsApp",
@@ -66,10 +66,10 @@ const content = {
         footerContactList: [
             "Alanya, Antalya",
             "+90 XXX XXX XXXX",
-            "info@akhotel.com",
-            "www.akhotel.com"
+            "info@akotel.com.tr",
+            "www.akotel.com.tr"
         ],
-        footerText: "© 2025 AK Hotel. All rights reserved. Crafted with passion for exceptional hospitality."
+        footerText: "© 2025 Ak Otel. All rights reserved. Crafted with passion for exceptional hospitality."
     },
     tr: {
         // Navigation
@@ -79,14 +79,14 @@ const content = {
         navLocation: "Konum",
         
         // Hero Section
-        heroTitle: "AK Hotel'e Hoşgeldiniz",
+        heroTitle: "Ak Otel'e Hoşgeldiniz",
         heroSubtitle: "Alanya'nın Kalbinde Lüks ve Konfor Deneyimi",
         bookNowBtn: "Rezervasyon",
         exploreBtn: "Keşfet",
 
         // Welcome Section
         welcomeTitle: "Olağanüstü Misafirperverlik Sizi Bekliyor",
-        welcomeText: "Alanya'nın güzel sahil kentinde yer alan AK Hotel, lüks, konfor ve otantik Türk misafirperverliğinin eşsiz karışımını sunar. Her detay, konaklamanızın beklentilerinizi aşmasını sağlamak için özenle düşünülmüştür.",
+        welcomeText: "Alanya'nın güzel sahil kentinde yer alan Ak Otel, lüks, konfor ve otantik Türk misafirperverliğinin eşsiz karışımını sunar. Her detay, konaklamanızın beklentilerinizi aşmasını sağlamak için özenle düşünülmüştür.",
 
         // Amenities Section
         amenitiesTitle: "Otel Olanakları & Hizmetleri",
@@ -110,15 +110,15 @@ const content = {
 
         // Gallery Section
         galleryTitle: "Fotoğraf Galerisi",
-        gallerySubtitle: "AK Hotel'in güzelliğini ve zarafetini keşfedin",
+        gallerySubtitle: "Ak Otel'in güzelliğini ve zarafetini keşfedin",
 
         // Location Section
         mapTitle: "Konum",
         mapSubtitle: "Alanya'nın kalbinde mükemmel konumda, plajlara, turistik yerlere ve restoranların yakını",
-        hotelLocation: "AK Hotel - Alanya, Antalya",
+        hotelLocation: "Ak Otel - Alanya, Antalya",
         contactAddress: "Alanya, Antalya, Türkiye",
         contactPhone: "+90 XXX XXX XXXX",
-        contactEmail: "info@akhotel.com",
+        contactEmail: "info@akotel.com.tr",
 
         // WhatsApp
         whatsappTooltip: "WhatsApp ile iletişime geçin",
@@ -138,10 +138,10 @@ const content = {
         footerContactList: [
             "Alanya, Antalya",
             "+90 XXX XXX XXXX",
-            "info@akhotel.com",
-            "www.akhotel.com"
+            "info@akotel.com.tr",
+            "www.akotel.com.tr"
         ],
-        footerText: "© 2025 AK Hotel. Tüm hakları saklıdır. Olağanüstü misafirperverlik tutkusuyla hazırlanmıştır."
+        footerText: "© 2025 Ak Otel. Tüm hakları saklıdır. Olağanüstü misafirperverlik tutkusuyla hazırlanmıştır."
     },
     de: {
         // Navigation
@@ -151,14 +151,14 @@ const content = {
         navLocation: "Standort",
         
         // Hero Section
-        heroTitle: "Willkommen im AK Hotel",
+        heroTitle: "Willkommen im Ak Otel",
         heroSubtitle: "Erleben Sie Luxus & Komfort im Herzen von Alanya",
         bookNowBtn: "Jetzt Buchen",
         exploreBtn: "Entdecken",
 
         // Welcome Section
         welcomeTitle: "Außergewöhnliche Gastfreundschaft Erwartet Sie",
-        welcomeText: "Eingebettet in die wunderschöne Küstenstadt Alanya bietet das AK Hotel eine unvergleichliche Mischung aus Luxus, Komfort und authentischer türkischer Gastfreundschaft. Jedes Detail wurde sorgfältig durchdacht, um sicherzustellen, dass Ihr Aufenthalt Ihre Erwartungen übertrifft.",
+        welcomeText: "Eingebettet in die wunderschöne Küstenstadt Alanya bietet das Ak Otel eine unvergleichliche Mischung aus Luxus, Komfort und authentischer türkischer Gastfreundschaft. Jedes Detail wurde sorgfältig durchdacht, um sicherzustellen, dass Ihr Aufenthalt Ihre Erwartungen übertrifft.",
 
         // Amenities Section
         amenitiesTitle: "Hotel Ausstattung & Service",
@@ -182,15 +182,15 @@ const content = {
 
         // Gallery Section
         galleryTitle: "Fotogalerie",
-        gallerySubtitle: "Entdecken Sie die Schönheit und Eleganz des AK Hotels",
+        gallerySubtitle: "Entdecken Sie die Schönheit und Eleganz des Ak Otel",
 
         // Location Section
         mapTitle: "Standort",
         mapSubtitle: "Perfekt im Herzen von Alanya gelegen, nah zu Stränden, Sehenswürdigkeiten und Restaurants",
-        hotelLocation: "AK Hotel - Alanya, Antalya",
+        hotelLocation: "Ak Otel - Alanya, Antalya",
         contactAddress: "Alanya, Antalya, Türkei",
         contactPhone: "+90 XXX XXX XXXX",
-        contactEmail: "info@akhotel.com",
+        contactEmail: "info@akotel.com.tr",
 
         // WhatsApp
         whatsappTooltip: "Kontaktieren Sie uns über WhatsApp",
@@ -210,10 +210,10 @@ const content = {
         footerContactList: [
             "Alanya, Antalya",
             "+90 XXX XXX XXXX",
-            "info@akhotel.com",
-            "www.akhotel.com"
+            "info@akotel.com.tr",
+            "www.akotel.com.tr"
         ],
-        footerText: "© 2025 AK Hotel. Alle Rechte vorbehalten. Mit Leidenschaft für außergewöhnliche Gastfreundschaft erstellt."
+        footerText: "© 2025 Ak Otel. Alle Rechte vorbehalten. Mit Leidenschaft für außergewöhnliche Gastfreundschaft erstellt."
     },
     ru: {
         // Navigation
@@ -223,14 +223,14 @@ const content = {
         navLocation: "Расположение",
         
         // Hero Section
-        heroTitle: "Добро пожаловать в AK Hotel",
+        heroTitle: "Добро пожаловать в Ak Otel",
         heroSubtitle: "Испытайте роскошь и комфорт в сердце Аланьи",
         bookNowBtn: "Забронировать",
         exploreBtn: "Исследовать",
 
         // Welcome Section
         welcomeTitle: "Вас ждёт исключительное гостеприимство",
-        welcomeText: "Расположенный в прекрасном прибрежном городе Алания, AK Hotel предлагает непревзойденное сочетание роскоши, комфорта и подлинного турецкого гостеприимства. Каждая деталь была тщательно продумана, чтобы ваше пребывание превзошло все ожидания.",
+        welcomeText: "Расположенный в прекрасном прибрежном городе Алания, Ak Otel предлагает непревзойденное сочетание роскоши, комфорта и подлинного турецкого гостеприимства. Каждая деталь была тщательно продумана, чтобы ваше пребывание превзошло все ожидания.",
 
         // Amenities Section
         amenitiesTitle: "Удобства и услуги отеля",
@@ -254,15 +254,15 @@ const content = {
 
         // Gallery Section
         galleryTitle: "Фотогалерея",
-        gallerySubtitle: "Откройте для себя красоту и элегантность AK Hotel",
+        gallerySubtitle: "Откройте для себя красоту и элегантность Ak Otel",
 
         // Location Section
         mapTitle: "Местоположение",
         mapSubtitle: "Идеально расположен в сердце Аланьи, рядом с пляжами, достопримечательностями и ресторанами",
-        hotelLocation: "AK Hotel - Алания, Анталья",
+        hotelLocation: "Ak Otel - Алания, Анталья",
         contactAddress: "Алания, Анталья, Турция",
         contactPhone: "+90 XXX XXX XXXX",
-        contactEmail: "info@akhotel.com",
+        contactEmail: "info@akotel.com.tr",
 
         // WhatsApp
         whatsappTooltip: "Свяжитесь с нами через WhatsApp",
@@ -282,10 +282,10 @@ const content = {
         footerContactList: [
             "Алания, Анталья",
             "+90 XXX XXX XXXX",
-            "info@akhotel.com",
-            "www.akhotel.com"
+            "info@akotel.com.tr",
+            "www.akotel.com.tr"
         ],
-        footerText: "© 2025 AK Hotel. Все права защищены. Создано с страстью к исключительному гостеприимству."
+        footerText: "© 2025 Ak Otel. Все права защищены. Создано с страстью к исключительному гостеприимству."
     }
 };
 
